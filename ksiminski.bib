@@ -1,0 +1,958 @@
+
+@STRING{AiSC = {Advances in Soft Computing}}
+@STRING{IJAMCS = {International Journal of Applied Mathematics and Computer Science}}
+@STRING{PWN = {Wydawnictwo Naukowe PWN}}
+@STRING{Springer = {Springer Berlin/Heidelberg}}
+@STRING{Wikipedia = {Wikipedia}}
+@STRING{WKL = {WK{\L}}}
+@STRING{WNT = {Wydawnictwa Naukowo-Techniczne}}
+@STRING{WPolSl = {Wydawnictwo Politechniki \'{S}l\k{a}skiej}}
+
+@Article{id:Suchy2023GrDBSCAN,
+  author   = {Dawid Suchy and Krzysztof Siminski},
+  journal  = {International Journal of Applied Mathematics and Computer Science},
+  title    = {GrDBSCAN: A granular density–based clustering algorithm},
+  year     = {2023},
+  pages    = {297–312},
+  volume   = {33},
+  number   = {2},
+  doi      = {10.34768/amcs-2023-0022},
+  abstract = {Density-based spatial clustering of applications with noise (DBSCAN) 
+  is a commonly known and used algorithm for data clustering. 
+  It applies a density-based approach and can produce clusters 
+  of any shape. However, it has a drawback—its worst-case computational 
+  complexity is O(n²) with regard to the number of data items n. 
+  The paper presents GrDBSCAN: a granular modification of DBSCAN 
+  with reduced complexity. The proposed GrDBSCAN first granulates 
+  data into fuzzy granules and then runs density-based clustering 
+  on the resulting granules. The complexity of GrDBSCAN is linear with
+  regard to the input data size and higher only for the number of granules. 
+  That number is, however, a parameter of the GrDBSCAN algorithm 
+  and is (significantly) lower than that of input data items. This 
+  results in shorter clustering time than in the case of DBSCAN. 
+  The paper is accompanied by numerical experiments. The implementation 
+  of GrDBSCAN is freely available from a public repository.},
+}
+
+@Article{id:Siminski2022Granular,
+  author   = {Krzysztof Siminski},
+  title    = {Granular Computing},
+  journal  = {Artificial intelligence and data processing},
+  year     = {2022},
+  pages    = {192-200},
+}
+
+@Article{id:Siminski20233WDNFS,
+  author   = {Krzysztof Siminski},
+  title    = {{3WDNFS} – Three-way decision neuro-fuzzy system for classification},
+  journal = {Fuzzy Sets and Systems},
+  volume = {466},
+  pages = {108432},
+  year = {2023},
+  issn = {0165-0114},
+  doi = {https://doi.org/10.1016/j.fss.2022.10.021},
+  url = {https://www.sciencedirect.com/science/article/pii/S0165011422004626},
+  author = {Krzysztof Siminski},
+  keywords = {Three-way decision, Neuro-fuzzy system, Granular computing, 
+              Explainable artificial intelligence, Interpretable models},
+  abstract = {The three-way decision approach is an emerging paradigm in the design 
+  of tools for data mining and machine learning. It switches from a two-way 
+  classification (“negative” and “positive” class) to three decisions: 
+  “negative”, “positive”, and non-commitment class. It means that when for 
+  some data it is not possible to elaborate a reliable answer they are assigned 
+  with a non-commitment class. In the paper we apply this paradigm for a cascade 
+  of neuro-fuzzy classifiers. If the first neuro-fuzzy system assigns a data 
+  item with a non-commitment class, the next neuro-fuzzy system is run for 
+  this data item. For easy items the first system is enough, but for harder 
+  ones two or more systems have to be run. Neuro-fuzzy systems elaborate 
+  interpretable fuzzy models. The models are composed of fuzzy rules that can 
+  be interpreted linguistically by humans. Application of neuro-fuzzy systems 
+  results in a cascade of interpretable models. The paper describes algorithms 
+  for training a cascade of neuro-fuzzy classifiers and for elaboration 
+  of answers. The paper presents results of numerical experiments that show 
+  that this technique can elaborate results with lower generalisation error 
+  than two-way classifiers. The implementation of the proposed system 
+  is available from a github repository.},
+}
+
+@article{id:Siminski2022Prototype,
+	title = {Prototype based granular neuro-fuzzy system for regression task},
+	journal = {Fuzzy Sets and Systems},
+	volume = {449},
+	pages = {56-78},
+	year = {2022}, 
+	issn = {0165-0114},
+	doi = {10.1016/j.fss.2022.03.001},
+	author = {Krzysztof Siminski},
+	url = {https://www.sciencedirect.com/science/article/pii/S0165011422000963},
+	keywords = {Prototype, Granular computing, Neuro-fuzzy system, Regression},
+	abstract = "Artificial intelligence is often inspired by biological solutions. 
+	Prototypes are among these inspirations. Humans often describe complex
+	entities by comparing them to previously known items (prototypes) 
+	instead of providing a detailed description. In this study, we apply 
+	this approach to neuro-fuzzy systems. Neuro-fuzzy systems operate using 
+	fuzzy IF-THEN rules. In our approach, the premises of rules are represented 
+	by prototypes. A new item is compared to the prototypes (as wholes) 
+	in the rule premises and its similarities to the prototypes in the rules 
+	define the firing strengths of the rules. The similarity is assessed based 
+	on the Minkowski metric. Prototypes are elaborated by granulation 
+	of the input domain with clustering and by applying the principle 
+	of justifiable granularity. We tested the proposed method in numerical 
+	experiments based on the regression task for benchmark data sets 
+	in public data repositories.",
+}
+
+
+@article{id:Siminski2022FuBiNFS,
+	abstract = "In data sets some attributes may have higher or lower importance. 
+	One of the tools used for data analysis of such datasets are subspace 
+	neuro-fuzzy systems. They elaborate fuzzy rules to describe data sets. 
+	In subspace neuro-fuzzy systems fuzzy rules exist in subspaces defined with 
+	subsets of attributes. In the paper we propose a novel fuzzy biclustering 
+	algorithm that groups both objects and attributes in fuzzy clusters. In that 
+	way we create a subspace fuzzy rule base for a subspace fuzzy system. The paper 
+	is accompanied with numerical examples that show this approach can lead 
+	to better generalisation (and thus lower data prediction errors) 
+	with preserved interpretation of fuzzy models.",
+	author = "Krzysztof Siminski",
+	doi = "10.1016/j.fss.2021.07.009",
+	issn = "0165-0114",
+	journal = "Fuzzy Sets and Systems",
+	keywords = "Neuro-fuzzy system; Biclustering; Subspace clustering; Subspace neuro-fuzzy system; Attribute weights",
+	pages = "84–106",
+	title = "FuBiNFS – fuzzy biclustering neuro-fuzzy system",
+	url = "https://www.sciencedirect.com/science/article/pii/S0165011421002499",
+	volume = "438",
+	year = "2022"
+}
+
+@article{id:Siminski2021GrNFS,
+	author = "Krzysztof Siminski",
+	doi = "10.34768/amcs-2021-0030",
+	journal = "International Journal of Applied Mathematics and Computer Science",
+	number = "3",
+	pages = "445–459",
+	title = "{GrNFS} – Granular neuro-fuzzy system for regression in large volume data",
+	volume = "31",
+	year = "2021",
+	abstract = "Neuro-fuzzy systems have proved their ability to elaborate intelligible 
+	nonlinear models for presented data. However, their bottleneck is the volume of data. 
+	They have to read all data in order to produce a model. We apply the granular approach 
+	and propose a granular neuro-fuzzy system for large volume data. In our method the data 
+	are read by parts and granulated. In the next stage the fuzzy model is produced not 
+	on data but on granules. In the paper we introduce a novel type of granules: a fuzzy
+	rule. In our system granules are represented by both regular data items and fuzzy rules.
+	Fuzzy rules are a kind of data summaries. The experiments show that the proposed 
+	granular neuro-fuzzy system can produce intelligible models even for large volume 
+	datasets. The system outperforms the sampling techniques for large volume datasets."
+}
+
+
+@article{id:Siminski2021Outlier,
+	abstract = "Real life data often suffer from noninformative objects – outliers. 
+	These are objects that are not typical in a dataset and can significantly decline 
+	the efficacy of fuzzy models. In the paper we analyse neuro-fuzzy systems robust 
+	to outliers in classification and regression tasks. We use Fuzzy C-Ordered Means 
+	(FCOM) clustering algorithm for scatter domain partition to identify premises 
+	of fuzzy rules. The clustering algorithm elaborates typicality of each object. 
+	Data items with low typicalities are removed from further analysis. The paper 
+	is accompanied by experiments that show the efficacy of our modified neuro-fuzzy 
+	system to identify fuzzy models robust to high ratios of outliers.",
+	author = "Krzysztof Siminski",
+	doi = "10.34768/amcs-2021-0021",
+	journal = "International Journal of Applied Mathematics and Computer Science",
+	number = "2",
+	pages = "303–319",
+	title = "An outlier-robust neuro-fuzzy system for classification and regression",
+	volume = "31",
+	year = "2021"
+}
+
+
+@InProceedings{id:Siminski2019NFL,
+author="Siminski, Krzysztof",
+editor="Kozielski, Stanis{\l}aw and Mrozek, Dariusz and Kasprowski, Pawe{\l} and Ma{\l}ysiak-Mrozek, Bo{\.{z}}ena and Kostrzewa, Daniel",
+title="NFL -- Free Library for Fuzzy and Neuro-Fuzzy Systems",
+booktitle="Beyond Databases, Architectures and Structures. Paving the Road to Smart Data Processing and Analysis",
+year="2019",
+publisher="Springer International Publishing",
+address="Cham",
+pages="139--150",
+abstract="The paper presents «Neuro-Fuzzy Library» (NFL) -- a free library for 
+fuzzy and neuro-fuzzy systems. The library written in C++ is available from 
+the GitHub repository. The library implements data modifiers (for complete and 
+incomplete data), clustering algorithms, fuzzy systems (descriptors, t-norms, 
+premises, consequences, rules, and implications), neuro-fuzzy systems 
+(precomposed MA, TSK, ANNBFIS, and subspace ANNBFIS for both classification 
+and regression tasks). The paper is accompanied by numerical examples.",
+isbn="978-3-030-19093-4",
+doi="https://doi.org/10.1007/978-3-030-19093-4_11"
+}
+
+
+@InProceedings{id:Siminski2019GrFCM,
+author="Siminski, Krzysztof",
+editor="Gruca, Aleksandra and Czach{\'o}rski, Tadeusz and Deorowicz, Sebastian and Har{\k{e}}{\.{z}}lak, Katarzyna and Piotrowska, Agnieszka",
+title="GrFCM -- Granular Clustering of Granular Data",
+booktitle="Man-Machine Interactions 6",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="111--121",
+abstract="Granular computing is a new paradigm in data mining. It mimics 
+a procedure commonly used by humans. A data granule may be defined as a 
+collection of related entities in sense of similarity, proximity, 
+indiscernibility. Nowadays granular computing focuses on elaboration of 
+granules from data. This step in granular computing is well researched. 
+Our objective is the next step: we would like to focus on computing with 
+granules. In the paper we propose a new clustering algorithm that works 
+with granules instead of numbers. The algorithm takes a collection of 
+granules as an input and clusters them into output granules.",
+isbn="978-3-030-31964-9",
+doi="https://doi.org/10.1007/978-3-030-31964-9_11"
+}
+
+@InProceedings{id:Siminski2019FIT2COMIn
+author="Siminski, Krzysztof",
+editor="Gruca, Aleksandra and Czach{\'o}rski, Tadeusz and Deorowicz, Sebastian and Har{\k{e}}{\.{z}}lak, Katarzyna and Piotrowska, Agnieszka",
+title="FIT2COMIn -- Robust Clustering Algorithm for Incomplete Data",
+booktitle="Man-Machine Interactions 6",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="99--110",
+abstract="In the paper we propose a new fuzzy interval type-2 C-ordered-means 
+clustering algorithm for incomplete data. The algorithm uses both marginalisation 
+and imputation to handle missing values. Thanks to imputation values in incomplete 
+items are not lost, thanks to marginalisation imputed data can be distinguished 
+from original complete items. The algorithm elaborates rough fuzzy sets (interval 
+type-2 fuzzy sets) to model imprecision and incompleteness of data. For handling 
+outliers the algorithm uses loss functions, ordering technique, and typicalities. 
+Outliers are assigned with low values of typicalities. The paper describes also 
+a new imputation technique--imputation with values from k nearest neighbours.",
+isbn="978-3-030-31964-9",
+doi="https://doi.org/10.1007/978-3-030-31964-9_10"
+}
+
+@Article{id:Siminski2017Interval,
+  Author                   = {Krzysztof Siminski},
+  Title                    = {Interval Type-2 Neuro-Fuzzy System with Implication-based Inference Mechanism},
+  Journal                  = {Expert Systems With Applications},
+  doi                      = {10.1016/j.eswa.2017.02.046}, 
+  year                     = {2017},
+  volume                   = {79C},
+  pages                    = {140-152},
+  abstract = "Neuro-fuzzy systems have been proved to be an efficient tool 
+  for modelling real life systems. They are precise and have ability to 
+  generalise knowledge from presented data. Neuro-fuzzy systems use fuzzy sets
+  – most commonly type-1 fuzzy sets. Type-2 fuzzy sets model uncertainties 
+  better than type-1 fuzzy sets because of their fuzzy membership function. 
+  Unfortunately computational complexity of type reduction in general type-2 
+  systems is high enough to hinder their practical application. This burden 
+  can be alleviated by application of interval type-2 fuzzy sets. The paper 
+  presents an interval type-2 neuro-fuzzy system with interval type-2 fuzzy 
+  sets both in premises (Gaussian interval type-2 fuzzy sets with uncertain 
+  fuzziness) and consequences (trapezoid interval type-2 fuzzy set). The inference
+  mechanism is based on the interval type-2 fuzzy Łukasiewicz, Reichenbach, 
+  Kleene-Dienes, or Brouwer–Gödel implications. The paper is accompanied by 
+  numerical examples. The system can elaborate models with lower error rate 
+  than type-1 neuro-fuzzy system with implication-based inference mechanism. 
+  The system outperforms some known type-2 neuro-fuzzy systems.",
+}
+
+
+@InProceedings{id:Siminski2016NewRoughNeuroFuzzy,
+author="Siminski, Krzysztof",
+editor="Kozielski, Stanis{\l}aw and Mrozek, Dariusz and Kasprowski, Pawe{\l} and Ma{\l}ysiak-Mrozek, Bo{\.{z}}ena and Kostrzewa, Daniel",
+title="New Rough-Neuro-Fuzzy Approach for Regression Task in Incomplete Data",
+booktitle="Beyond Databases, Architectures and Structures. Advanced Technologies for Data Mining and Knowledge Discovery: 12th International Conference, BDAS 2016, Ustro{\'{n}}, Poland, May 31 -- June 3, 2016, Proceedings",
+year="2016",
+publisher="Springer International Publishing",
+pages="146--156",
+isbn="978-3-319-34099-9", 
+}
+
+
+@InProceedings{id:Siminski2016MemeticDiff,
+author="Siminski, Krzysztof",
+editor="Kozielski, Stanis{\l}aw  and Mrozek, Dariusz and Kasprowski, Pawe{\l} and Ma{\l}ysiak-Mrozek, Bo{\.{z}}ena and Kostrzewa, Daniel",
+title="Memetic Neuro-Fuzzy System with Differential Optimisation",
+booktitle="Beyond Databases, Architectures and Structures. Advanced Technologies for Data Mining and Knowledge Discovery: 12th International Conference, BDAS 2016, Ustro{\'{n}}, Poland, May 31 -- June 3, 2016, Proceedings",
+year="2016",
+publisher="Springer International Publishing",
+pages="135--145",
+isbn="978-3-319-34099-9",
+doi="10.1007/978-3-319-34099-9_9", 
+}
+
+@InProceedings{id:Siminski2016Improvement,
+author="Siminski, Krzysztof",
+editor="Kozielski, Stanis{\l}aw and Mrozek, Dariusz and Kasprowski, Pawe{\l} and Ma{\l}ysiak-Mrozek, Bo{\.{z}}ena and Kostrzewa, Daniel",
+title="Improvement of Precision of Neuro-Fuzzy System by Increase of Activation of Rules",
+booktitle="Beyond Databases, Architectures and Structures. Advanced Technologies for Data Mining and Knowledge Discovery: 12th International Conference, BDAS 2016, Ustro{\'{n}}, Poland, May 31 -- June 3, 2016, Proceedings",
+year="2016",
+publisher="Springer International Publishing",
+pages="157--167",
+isbn="978-3-319-34099-9",
+doi="10.1007/978-3-319-34099-9_11", 
+}
+
+
+@article{id:Siminski2017Robust,
+year = {2017},
+author = {Krzysztof Siminski},
+journal = {Neurocomputing},
+pages = {33-43},
+volume = {238},
+title = {Robust subspace neuro-fuzzy system with data ordering},
+doi = {10.1016/j.neucom.2017.01.034},
+abstract = {Neuro-fuzzy systems are known for their ability to both
+approximate and generalise presented data. In real life data sets 
+not always all attributes (dimensions) of data are relevant or have 
+the same importance. Some of them may be noninformative or unnecessary. 
+This is why subspace technique is applied. Unfortunately this 
+technique is vulnerable to noise and outliers that are often present
+in real life data. The paper describes a subspace neuro-fuzzy system
+with data ordering technique. Data items are ordered and assigned 
+with typicalities. Data items with low typicalities have lower 
+influence on the elaborated fuzzy model. This technique makes fuzzy
+models more robust to noise and outliers. The paper is accompanied 
+by numerical experiments on real life data sets.},
+}
+
+
+@article{id:Siminski2017Fuzzy,
+title = "Fuzzy weighted C-ordered means clustering algorithm ",
+journal = "Fuzzy Sets and Systems ",
+volume = {318},
+pages = {1-33},
+year = "2017",
+issn = "0165-0114",
+doi = "http://dx.doi.org/10.1016/j.fss.2017.01.001",
+url = "http://www.sciencedirect.com/science/article/pii/S0165011417300180",
+author = "Krzysztof Siminski",
+abstract = "Abstract In real life data sets some attributes may have 
+lower importance or even may be completely noninformative. The subspace 
+clustering algorithms have been proposed to handle this. The soft 
+subspace algorithms are vulnerable to noise and outliers. The paper 
+presents a novel algorithm that handles both various importance of 
+attributes and outliers. The proposed Fuzzy Weighted C-Ordered Mean 
+(FWCOM) clustering algorithm elaborates clusters in soft subspaces. 
+In each cluster each attribute is assigned a weight from interval [0, 1]. 
+Each attribute has its individual weight (importance) in each cluster. 
+The proposed algorithm applies the ordering technique to effectively 
+reduce the influence of outliers and noise. The paper is accompanied 
+by numerical experiments. "
+}
+
+
+@Article{id:Sikora2014Comparison,
+  Title                    = {Comparison of Incomplete Data Handling Techniques for Neuro-Fuzzy Systems},
+  Author                   = {Marcin Sikora and Krzysztof Simi{\'{n}}ski},
+  Journal                  = {Computer Science},
+  Year                     = {2014},
+  Note                     = {[8 pkt.]},
+  Number                   = {4},
+  Pages                    = {441-458},
+  Volume                   = {15},
+
+  Abstract                 = {Real-life data sets sometimes miss some values. The incomplete data needs
+ specialized algorithms or preprocessing that allows the use of the algorithms
+ for complete data. The paper presents a comparison of various techniques for
+ handling incomplete data in the neuro-fuzzy system ANNBFIS. The crucial
+ procedure in the creation of a fuzzy model for the neuro-fuzzy system is the
+ partition of the input domain. The most popular approach (also used in the
+ ANNBFIS) is clustering. The analyzed approaches for clustering incomplete
+ data are: preprocessing (marginalization and imputation) and specialized clustering
+ algorithms (PDS, IFCM, OCS, NPS). The objective of our research is
+ the comparison of the preprocessing techniques and specialized clustering algorithms
+ to find the the most-advantageous technique for handling incomplete
+ data with a neuro-fuzzy system. This approach is also the indirect validation
+ of clustering.},
+  Doi                      = {dx.doi.org/10.7494/csci.2014.15.4.441}
+}
+
+@incollection{id:Siminski2016Imputation,
+  title={Imputation of Missing Values by Inversion of Fuzzy Neuro-System},
+  author={Siminski, Krzysztof},
+  booktitle={Man--Machine Interactions 4},
+  pages={573--582},
+  year={2016},
+  publisher={Springer International Publishing},
+  abstract = {The paper presents a memetic fuzzy inference system based
+on Big Bang Big Crunch (evolutionary optimisation) and gradient descent 
+(local search) techniques. Tuning parameters of the fuzzy system
+with evolutionary optimisation failed to be successful, but application
+of both evolutionary and local optimisation achieved lower error rates
+than reference system (that uses only gradient descent optimisation).
+The results of experiments have been statistically verified.},
+}
+
+@incollection{id:Siminski2016Memetic,
+  title={Memetic Neuro-Fuzzy System with {B}ig-{B}ang-{B}ig-{C}runch Optimisation},
+  author={Siminski, Krzysztof},
+  booktitle={Man--Machine Interactions 4},
+  pages={583--592},
+  year={2016},
+  publisher={Springer International Publishing},
+  abstract = {Incomplete data are common and require special techniques.
+The essential techniques are: marginalisation, imputation, and rough
+sets. The paper presents the imputation by inversion of the neuro-fuzzy
+system. First the neuro-fuzzy systems is trained with complete data.
+Next the system is inverted and the missing values are imputed. The
+complete and imputed data are used to train the final neuro-fuzzy system. 
+The technique is limited to data items with one missing value. The
+paper is accompanied by numerical examples and statistical verification.},
+}
+
+
+@Article{id:Siminski2016Ridders,
+  Title                    = {Ridders algorithm in approximate inversion of fuzzy model with parameterized consequences},
+  Author                   = {Krzysztof Siminski},
+  Journal                  = {Expert Systems with Applications},
+  Year                     = {2016},
+  Volume                   = {51},
+  Pages                    = {276--285},
+  doi                      = {10.1016/j.eswa.2015.12.042},
+  note                     = {[IF:  2.240]},
+  url                      = {http://www.sciencedirect.com/science/article/pii/S0957417415008507}
+  abstract  = {Fuzzy models are known for their ability of precise data approximation. They can be used in automatic
+control as controllers. One of the techniques is based on inversion of fuzzy models. Fuzzy models can
+be inverted exactly or approximately. The exact inversion requires special features of fuzzy models. The
+approximate methods can be applied to a wider class of fuzzy models. The paper presents an approximate inversion of a fuzzy model with parametrized consequences. This fuzzy model cannot be inverted
+exactly. The presented approach inverts an existing fuzzy model with respect to any input. The inversion
+procedure uses the Ridders algorithm. The inversion is fast and does not require a separate training for
+each inverse input. The convergence of this approach is faster than linear. The paper formulates a theorem that shortens a search interval and may help to accelerate an inversion. The paper is accompanied
+by numerical examples.},
+}
+
+@InProceedings{id:Nalepa2015Towards,
+  Title                    = {Towards Parameter-less Support Vector Machines},
+  Author                   = {Jakub Nalepa and Krzysztof Siminski and Michal Kawulok},
+  Booktitle                = {2015 3rd IAPR Asian Conference on Pattern Recognition (ACPR)},
+  Year                     = {2015},
+  pages                    = {211-215},
+  abstract  = {Support vector machines (SVMs) are a widely-used 
+  machine learning technique, but they suffer from a significant
+drawback of high time and memory training complexity,
+which should be endured especially in big data problems.
+SVMs incorporate kernel functions—it involves selecting
+the kernel and induces an additional computational effort.
+In this paper, we address these issues and propose an SVM
+framework that automatically determines the kernel and 
+selects data to train SVMs. It embodies the neuro-fuzzy system
+for creating the kernel along with the memetic algorithm to
+select training samples. Extensive experiments indicate that
+our approach enables obtaining high classification scores.},
+}
+
+@article{id:Siminski2015RoughFSS,
+  title={Rough subspace neuro-fuzzy system},
+  author={Simi{\'n}ski, Krzysztof},
+  journal={Fuzzy Sets and Systems},
+ volume = {269},
+number = {},
+pages = {30-46},
+year = {2015},
+issn = {0165-0114},
+doi = {doi:10.1016/j.fss.2014.07.003},
+url = {http://www.sciencedirect.com/science/article/pii/S0165011414003108},
+abstract = {The missing values can be an important obstacle 
+and chalenging problem in data analysis. The paper presents
+the neuro-fuzzy system that handles incomplete data. The systems
+ is complete: it can extract the fuzzy rule base from both 
+ complete and incomplete data and can elaborate answers for 
+ complete and incomplete data. The second major feature of 
+ the system is the assignment of weights to attributes in 
+ fuzzy rules. The weights are assigned locally: each fuzzy rule
+ has its own weights for attributes. This feature may improve 
+ the precision of answers elaborated by the system and may
+ reveal relations between attributes in the data set. The paper 
+ is accompanied by experimental results. The results show that 
+ the subspace technique is advantageous in handling data set 
+ with missing values. The results also reveal that for 
+ approximation of complete data it is better to apply techniques 
+ without subspace approach.},
+note = {[40 pkt]},
+}
+
+
+
+@article{id:Matyja2014Comparison,
+   author = {Artur Matyja and Krzysztof Simi{\'{n}}ski},
+   title = {Comparison of algorithms for clustering incomplete data},
+   journal = {Foundations of Computing and Decision Sciences},
+   pages = {107--127},
+   doi = {10.2478/fcds-2014-0007},
+   volume = {39},
+   number = {2},
+   year = {2014},
+   note = {[9 pkt]},
+   abstract = {The missing values are not uncommon in real data sets.
+   The algorithms and methods used for the data analysis of complete data
+   sets cannot always be applied to missing value data. In order to use 
+   the existing methods for complete data, the missing value data sets 
+   are preprocessed. The other solution to this problem is creation of new
+   algorithms dedicated to missing value data sets. The objective of our 
+   research is to compare the preprocessing techniques and specialised 
+   algorithms and to find their most advantageous usage.},
+}
+
+@article{id:Siminski2014Rough,
+  title={Rough fuzzy subspace clustering for data with missing values},
+  author={Simi{\'n}ski, Krzysztof},
+  journal={Computing \& Informatics},
+  volume={33},
+  number={1},
+  year={2014},
+  pages={131--153},
+  abstract = {The paper presents rough fuzzy subspace clustering algorithm and 
+  experimental results of clustering. In this algorithm three approaches for 
+  handling missing values are used: marginalisation, imputation and rough sets. 
+  The algorithm also assigns weights to attributes in each cluster; this leads 
+  to subspace clustering. The parameters of clusters are elaborated in the 
+  iterative procedure based on minimising of criterion function. The crucial 
+  parameter of the proposed algorithm is the parameter having the influence on 
+  the sharpness of elaborated subspace cluster. The lower values of the 
+  parameter lead to selection of the most important attribute. The higher values
+  create clusters in the global space, not in subspaces. The paper is 
+  accompanied by results of clustering of synthetic and real life data sets.},
+  note = {[15 pkt]},
+}
+
+@incollection{id:Siminski2014Transformation,
+  title={Transformation of Input Domain for SVM in Regression Task},
+  author={Simi{\'n}ski, Krzysztof},
+  booktitle={Man-Machine Interactions 3},
+  pages={423--430},
+  year={2014},
+  publisher={Springer International Publishing},
+  abstract={Support vector machines (SVM) and neuro-fuzzy systems (NFS) are 
+  efficient tools for regression tasks. The problem of the SVMs is the proper 
+  choice of kernel functions. Our idea is to transform the task's domain with 
+  NFS so that linear kernel can be applied. The paper is accompanied by 
+  numerical experiments.},
+  note = {[10 pkt.]},
+}
+
+
+@incollection{id:Siminski2014NeuroSVM,
+  title={Neuro-Fuzzy System Based Kernel for Classification with Support Vector Machines},
+  author={Simi{\'n}ski, Krzysztof},
+  booktitle={Man-Machine Interactions 3},
+  pages={415--422},
+  year={2014},
+  publisher={Springer International Publishing},
+  abstract={Selection of proper kernel function for SVM is quite a difficult 
+  task. The paper presents the SVM with kernel generated by neuro-fuzzy system (NFS).  
+  The kernel function created in this way satisfies the Mercer's theorem. 
+  The paper is accompanied by numerical results showing the ability of NFS to 
+  approximate the appropriate kernel functions.},
+  note = {[10 pkt.]},
+}
+
+
+@ARTICLE{id:Siminski2014Neuro,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Neuro-fuzzy system with weighted attributes},
+  journal = {Soft Computing},
+  volume = {18}, 
+  number = {2}, 
+  pages = {285--297}, 
+  year = {2014},
+  doi = {10.1007/s00500-013-1057-z},
+  abstract = {The paper presents the neuro-fuzzy system with weighted attributes. 
+Its crucial part is the fuzzy rule base composed of fuzzy rules (implications). 
+In each rule the attributes have their own weights. In our system the weights
+of the attributes are numbers from the interval $[0, 1]$ and they are not global: 
+each fuzzy rule has its own attributes' weights, thus it exists in its own weighted subspace.
+
+The theoretical description is accompanied by  results of experiments on real life 
+data sets. They show that the neuro-fuzzy system  with weighted attributes can elaborate
+more precise results than the system that does not apply  weights to attributes. Assigning 
+weights to attributes can also discover  knowledge about importance of attributes and their relations.},
+   note = {[25 pkt; 2012 Impact Factor 1.124]},
+}
+
+@ARTICLE{id:Siminski2013Clustering,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Clustering with missing values},
+  journal = {Fundamenta Informaticae},
+  year = {2013},
+  volume = {123},
+  pages = {331-350},
+  number = {3},
+  abstract = {The paper presents the clustering algorithm for data with missing
+	values. In this approach both marginalisation and imputation are
+	applied. The result of the clustering is the type-2 fuzzy set / rough
+	fuzzy set. This approach enables the distinction between original
+	and imputed data. The method can be applied to the data sets with
+	all attributes lacking some values. The paper is accompanied by the
+	numerical examples of clustering of synthetic and real-life data
+	sets.},
+   note = {[20 pkt]},
+}
+
+@ARTICLE{id:Siminski2012Clustering,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Clustering in Fuzzy Subspaces},
+  journal = {Theoretical and Applied Informatics},
+  year = {2012},
+  volume = {24},
+  pages = {313--326},
+  number = {4},
+  abstract = {Some data sets contain data clusters not in all dimension, but in
+	subspaces. Known algorithms select attributes and identify clusters
+	in subspaces. The paper presents a novel algorithm for subspace fuzzy
+	clustering. Each data example has fuzzy membership to the cluster.
+	Each cluster is defined in a certain subspace, but the the membership
+	of the descriptors of the cluster to the subspace (called descriptor
+	weight) is fuzzy (from interval [0, 1]) – the descriptors of the
+	cluster can have partial membership to a subspace the cluster is
+	defined in. Thus the clusters are fuzzy defined in their subspaces.
+	The clusters are deﬁned by their centre, fuzziness and weights of
+	descriptors. The clustering algorithm is based on minimizing of criterion
+	function. The paper is accompanied by the experimental results of
+	clustering. This approach can be used for partition of input domain
+	in extraction rule base for neuro-fuzzy systems.},
+  doi = {10.2478/v10179-012-0019-y},
+   note = {[4 pkt]},
+}
+
+
+@article{id:Siminski2012NeuroRoughFuzzy,
+    title = {Neuro-rough-fuzzy approach for regression modelling from missing data},
+    author = {Krzysztof Simi\'{n}ski},
+    affiliation = {Silesian University of Technology Institute of Informatics Akademicka 16, 44-100 Gliwice, Poland},
+    journal = IJAMCS,
+    year = 2012,
+    pages = {461--476},
+    volume = 22, 
+    number = 2,
+    doi={10.2478/v10006-012-0035-4},
+    note = {[20 pkt; impact factor: 0.794]},
+    abstract = {Real life data sets often suffer from missing data. The hitherto proposed
+	neuro-rough-fuzzy systems often cannot handle such  situations. The
+	paper presents the neuro-fuzzy system for data sets with missing
+	values. The proposed solution is the complete neuro-fuzzy systems.
+	The system creates the rough fuzzy model from presented data (both
+	full and with missing values) and is able to elaborate the answer
+	for full and missing data examples. The paper also describes the
+	dedicated clustering algorithm.  The paper is accompanied by the
+	results of numerical experiments.},
+}
+
+@ARTICLE{id:Siminski2011Merging,
+	AUTHOR       = {Krzysztof Simi\'{n}ski},
+	TITLE        = {Merging of Fuzzy Models for Neuro-fuzzy Systems},
+	JOURNAL      = {Theoretical and Applied Informatics},
+	YEAR         = {2011},
+	VOLUME       = {23},
+	NUMBER       = {2},
+	PAGES        = {107--126},
+	MONTH        = {},
+	NOTE         = {},
+   doi          = {10.2478/v10179-011-0008-6},
+      note = {[4 pkt]},
+
+}
+
+@incollection{id:Siminski2011NeuroFuzzySystem,
+   author = {Krzysztof Simi\'{n}ski},
+   affiliation = {Silesian University of Technology Institute of Informatics Akademicka 16, 44-100 Gliwice, Poland},
+   title = {Neuro-fuzzy System for Large Data Sets},
+   booktitle = {Man-Machine Interactions 2},
+   series = {Advances in Intelligent and Soft Computing},
+   editor = {Tadeusz Czach\'{o}rski and Stanis{\l}aw Kozielski and  Urszula Sta\'{n}czyk},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {},
+   pages = {297--304},
+   volume = {103},
+   year = {2011},
+   doi = {10.1007/978-3-642-23169-8_32},
+      note = {[8 pkt]},
+
+}
+
+@INCOLLECTION{id:Szuszczanska2009Deep,
+  author = {Nina Szuszcza\'{n}ska and Przemys{\l}aw Szmal and Simi\'{n}ski, Krzysztof},
+  title = {The Deep Parser for {P}olish},
+  booktitle = {Responding to Information Society Challenges: New Advances in Human
+	Language Technologies},
+  publisher = {Springer-Verlag},
+  year = {2009},
+  editor = {Zygmunt Vetulani and Hans Uszkoreit},
+  volume = {5603},
+  series = {Lecture Notes in Artificial Intelligence (LNAI)},
+  pages = {205 -- 217},
+  address = {Berlin, Heidelberg},
+  doi = {10.1007/978-3-642-04235-5_18},
+  isbn = {978-3-642-04234-8},
+  timestamp = {2009.04.23}
+}
+
+
+
+@incollection {id:Siminski2009Simplification,
+   author = {Krzysztof Simi\'{n}ski},
+   affiliation = {Silesian University of Technology Institute of Informatics Akademicka 16 44-100 Gliwice Poland},
+   title = {Simplification of Neuro-Fuzzy Models},
+   booktitle = {Man-Machine Interactions},
+   series = {Advances in Intelligent and Soft Computing},
+   editor = {Krzysztof A. Cyran and Stanis{\l}aw Kozielski and James F. Peters
+             and Urszula Sta\'{n}czyk and Alicja Wakulicz-Deja},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {},
+   pages = {265--272},
+   volume = {59},
+   doi = {10.1007/978-3-642-00563-3_27},
+   year = {2009},
+   note = {[8 pkt]},
+}
+
+
+@incollection{id:Siminski2009Remark,
+   author = {Krzysztof Simi\'{n}ski},
+   affiliation = {Silesian University of Technology Institute of Informatics Akademicka 16, 44-100 Gliwice, Poland},
+   title = {Remark on Membership Functions in Neuro-Fuzzy Systems},
+   booktitle = {Man-Machine Interactions},
+   series = {Advances in Intelligent and Soft Computing},
+   editor = {Krzysztof A. Cyran and Stanis{\l}aw Kozielski and James F. Peters and Urszula Sta\'{n}czyk and Alicja Wakulicz-Deja},
+   publisher = {Springer Berlin / Heidelberg},
+   isbn = {},
+   pages = {291--297},
+   volume = {59},
+   doi = {10.1007/978-3-642-00563-3_30},
+   year = {2009},
+   note = {[10 pkt]},
+}
+
+
+
+
+
+@INPROCEEDINGS{id:Suszczanska2007Polsyn,
+  author = {Nina Suszcza\'{n}ska and Krzysztof Simi\'{n}ski},
+  title = {The {P}olsyn {P}arser},
+  booktitle = {Proceeding of 3rd Language \& Technology Conference},
+  year = {2007},
+  editor = {Zygmunt Vetulani},
+  pages = {345--349},
+  address = {Pozna\'{n}},
+  organization = {Human Language Technologies as a Challenge for Computer Science and
+	Linguistics},
+  url = {http://sun.aei.polsl.pl/~ksim/data/publikacje/2007. Suszczanska, Siminski. The Polsyn Parser.pdf}
+}
+
+@INCOLLECTION{id:Siminski2009Patchwork,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Patchwork neuro-fuzzy system with hierarchical domain partition},
+  booktitle = {Computer Recognition Systems 3},
+  publisher = {Springer-Verlag},
+  year = {2009},
+  editor = {Marek Kurzy\'{n}ski and Micha{\l} Wo\'{z}niak},
+  volume = {57},
+  series = {Advances in Intelligent and Soft Computing},
+  pages = {11--18},
+  address = {Berlin, Heidelberg},
+  timestamp = {2009.02.26},
+  doi = {10.1007/978-3-540-93905-4_2},
+  abstract = {The paper presents the patchwork hierarchical domain partition in the
+neuro-fuzzy system with parameterized consequences. The hierarchical domain par-
+tition has the advantages of grid partition and clustering. It avoids the curse of
+dimensionality and reduces the occurrence of areas with low membership to all re-
+gions. The paper depicts the iterative hybrid procedure of hierarchical split. The
+splitting procedure estimates the best way of creating of the new region: (1) based
+on ﬁnding and splitting the region with the highest contribution to the error of the
+system or (2) creation of patch region for the highest error area. The paper presents
+the results of experiments on real life and synthetic datasets. This approach can
+produce neuro-fuzzy inference systems with better generalisation ability and subse-
+quently lower error rate.},
+note = {[10 pkt]},
+
+}
+
+
+@INCOLLECTION{id:Siminski2008Sentence,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Sentence Boundary Verification in {P}olish Text},
+  booktitle = {Computer Recognition Systems 2},
+  publisher = {Springer Verlag},
+  year = {2008},
+  editor = {Marek Kurzy\'{n}ski and Edward Pucha{\l}a and Micha{\l} Wo\'{z}niak and Andrzej \.{Z}o{\l}nierek},
+  volume = {45},
+  series = {Advances in Soft Computing},
+  address = {Berlin, Heidelberg},
+  timestamp = {2008.12.20},
+  pages = {493--499},
+  doi = {10.1007/978-3-540-75175-5_62},
+  abstract = {In this paper the heuristic metod based on phrase analysis is proposed
+for sentence boundary verification in Polish texts. The decision rules, maximum
+entropy and neural network as reference methods are compared with the phrase
+analysis. The results elaborated by the proposed method are more acurate than the
+reference methods.},
+note = {[10 pkt]},
+}
+
+
+
+@INCOLLECTION{id:Siminski2009Data,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Data noise reduction in neuro-fuzzy systems},
+  booktitle = {Computer Recognition Systems 3},
+  publisher = {Springer-Verlag},
+  year = {2009},
+  editor = {Marek Kurzy\'{n}ski and Micha{\l} Wo\'{z}niak},
+  volume = {57},
+  series = {Advances in Intelligent and Soft Computing},
+  pages = {187--194},
+  address = {Berlin, Heidelberg},
+  timestamp = {2009.02.26},
+  doi = {10.1007/978-3-540-93905-4_23},
+  note = {[8 pkt]},
+}
+
+
+
+
+@ARTICLE{id:Siminski2010Rule,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Rule weights in neuro-fuzzy system with  hierarchical domain partition},
+  journal = IJAMCS,
+  year = {2010},
+  volume = {20},
+  pages = {337--347},
+  number = {2},
+  note = {[9 pkt; impact factor: 0.684]},
+  doi = {10.2478/v10006-010-0025-3},
+  abstract = {The paper discusses the problem of rule weights tuning in the neuro-fuzzy systems with parameterized consequences
+in which the rule weights and the activation of the rules are not interchangeable. Some heuristic methods of the rule
+weights computation in the neuro-fuzzy systems with hierarchical input domain partition and parameterized consequences
+are proposed. A few heuristics with experimental results showing the advantage of their usage are presented.},
+}
+
+
+
+@INPROCEEDINGS{id:Siminski2008Neuroapproach,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Neuro-fuzzy Approach to Sentence Boundary Verification in Polish Text},
+  booktitle = {OWD2008, X International PhD Workshop},
+  year = {2008},
+  pages = {267--270},
+  address = {Wis{\l}a, Poland},
+  abstract = {The sentence boundary verification is the crucial task in the natural
+	language processing. The text analysis is very often based on sentences.
+	The origin of the problem originates from the haplography of the
+	full stop. Many approaches have been proposed (as direct, character,
+	feature and phrase analyses). This paper presents the attempt at
+	applying the neuro-fuzzy approach to the feature analysis of the
+	lexems in the neighbourhood of the full stop in question. The results
+	of the experiments reveal that the neuro-fuzzy systems achieve similar
+	or better results with two or three rules whereas the crisp system
+	generated rule bases with more than 20 rules.},
+  timestamp = {2008.10.13},
+  url = {http://sun.aei.polsl.pl/~ksim/data/publikacje/2008. Siminski. Neuro-fuzzy Approach to Sentence Boundary Verification in Polish Text.pdf}
+}
+
+@ARTICLE{id:Siminski2008Neuroinput,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Neuro-Fuzzy System with Hierarchical Partition of Input Domain},
+  journal = {Studia Informatica},
+  year = {2008},
+  volume = {29},
+  pages = {43--53},
+  number = {4A (80)},
+  timestamp = {2008.10.02},
+  url = {http://sun.aei.polsl.pl/~ksim/data/publikacje/2008. Siminski. Neuro-fuzzy system with hierarchical partition of input domain.pdf},
+     note = {[4 pkt]},
+
+}
+
+@INPROCEEDINGS{id:Siminski2008neuropartition,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Neuro-fuzzy system with hierarchical domain partition},
+  booktitle = {Proceedings of the International Conference on Computational Intelligence
+	for Modelling, Control and Automation (CIMCA 2008)},
+  year = {2008},
+  pages = {392--397},
+  address = {Vienna, Austria},
+  publisher = {{IEEE Computer Society Publishing}},
+  abstract = {The paper presents the hierarchical domain partition in the neuro-fuzzy
+	system with parameterized consequences. The hierarchical domain partition
+	has the advantages of grid partition and clustering. It avoids the
+	curse of dimensionality and the problem of determination of number
+	of regions. This method of domain partition reduces the occurrence
+	of areas with low membership to all regions. The paper depicts the
+	iterative procedure of hierarchical split based on finding and splitting
+	the region with the highest contribution to the error of the system.
+	The split of regions into two subregions in the proposed system is
+	based on the fuzzy clustering, resulting in both splitting and fuzzyfication
+	of the subregions. Both decisive and error values are taken into
+	consideration in splitting the regions. The paper presents the results
+	of experiments on real life and synthetic datasets. This approach
+	can produce neuro-fuzzy inference systems with better generalisation
+	ability and subsequently lower error rate.},
+  doi = {http://dx.doi.org/10.1109/CIMCA.2008.67},
+  isbn = {978-0-7695-3514-2},
+  timestamp = {2009.02.26},
+     note = {[8 pkt; Web of Science]},
+
+}
+
+@INPROCEEDINGS{id:Siminski2008Two,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Two Ways of Domain Partition in Fuzzy Inference System with Parametrized
+	Consequences: Clustering and Hierarchical Split},
+  booktitle = {OWD2008, X International PhD Workshop},
+  year = {2008},
+  pages = {103--108},
+  address = {Wis{\l}a, Poland},
+  abstract = {The rule base is a crucial part of neuro-fuzzy systems. Each rule,
+	representing the fuzzy implication, consists of a premise and a conclusion.
+	Often the premises are elaborated first, then the consequences. There
+	are many methods of premise extraction, among them clustering, grid
+	split and hierarchical partition. The hierarchical domain split combines
+	the advantages of clustering and grid split: avoids the curse of
+	dimensionality and reduces the areas of very low membership to all
+	regions. The paper compares the ANNBFIS system with clustering of
+	the domain and the proposed HS-47 system with hierarchical domain
+	partition. The paper also presents the results of experiments on
+	real life and synthetic dataset.},
+  timestamp = {2008.10.13},
+  url = {http://sun.aei.polsl.pl/~ksim/data/publikacje/2008. Siminski. Two Ways of Domain Partition in Fuzzy Inference System With Parametrized Consequences. Clustering And Hierarchical Split.pdf}
+}
+
+
+@article{id:Siminski2012Analysis,
+  author = {Krzysztof Simi\'{n}ski},
+  title = {Analysis of new method of initialisation of neuro-fuzzy systems with support vector machines},
+  doi = {10.2478/v10179-012-0015-2},
+  journal = {Theoretical and Applied Informatics},
+  year = {2012},
+  volume = {24},
+  number = {3},
+  pages = {243–254},
+  month = {November},
+  abstract = {The correspondence between support vector machines and neuro-fuzzy
+	systems is very interesting. The full equivalence for classification
+	and partial for regression has been formally shown. The equivalence
+	has very interesting implication. It is a base for a new method of
+	initialization of neurofuzzy systems, ie. for creating of fuzzy rule
+	base. The commonly used methods are based on reversion of item: the
+	premises of fuzzy rules split input domain into region, thus premises
+	of fuzzy rules can be elaborated by partition of input domain. This
+	leads to three main classes of partition of input domain. The above
+	mentioned equivalence results in new way of creating the rule base.
+	Now the input domain is not partitioned, but the premises of fuzzy
+	rules are extracted from support vector. The objective of the paper
+	is to examine the advantages and disadvantages of this new method
+	for creation of fuzzy rule bases for neuro-fuzzy systems.},
+      note = {[4 pkt]},
+}
+
+
+
+
+
+
+

@@ -1,0 +1,66 @@
+.date {   background-color: blue; }
+.btb-header { }
+.bibref {  padding:3px; padding-left:15px;  vertical-align:top;}
+.bibtitle { font-weight:bold; }
+.bibbooktitle { font-style:italic; }
+
+.rheader 
+{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  /*background-color: #003366;*/
+  /*color: #ffffff;*/
+  padding: 2px;
+  margin-bottom: 10px;
+  /*border-bottom: #ff6633 2px solid;*/
+
+}
+
+
+.purebibtex 
+{
+  font-family: "Ubuntu Mono", monospace;
+  font-size: small;
+  border: 1px solid #DDDDDD;
+  background: none repeat scroll 0 0 #F5F5F5;  
+  padding:10px;
+  
+  overflow:auto;
+  /*width:600px;*/
+  
+  clear:both;
+}
+
+.bibentry-by 
+{ 
+   font-style: italic; 
+   font-family: "Ubuntu", sans-serif;
+}
+
+.bibentry-abstract 
+{  
+   margin:15px;
+   font-family: "Ubuntu", sans-serif;
+}
+.bibentry-label 
+{  
+   margin-top:15px; 
+   font-family: "Ubuntu", sans-serif;
+   font-weight: bold;
+   
+}
+.bibentry-reference 
+{   
+   font-family: "Ubuntu", sans-serif;
+   margin-bottom:15px; 
+   padding:10px; 
+   background: none repeat scroll 0 0 #F5F5F5; 
+   border: 1px solid #DDDDDD; 
+}
+
+.bibentry-document-link
+{
+   font-family: "Ubuntu", sans-serif;
+}
+
