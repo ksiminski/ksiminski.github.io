@@ -1,3 +1,6 @@
+#!/bin/python3
+
+
 from pybtex.database.input import bibtex
 
 # https://docs.pybtex.org/api/parsing.html#bibliography-data-classes
